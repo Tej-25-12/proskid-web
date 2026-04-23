@@ -1,0 +1,132 @@
+.page-header {
+  height: 40vh;
+  background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=2070');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+}
+
+.page-header h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  color: var(--accent-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.intro-text p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.mission-card {
+  background-color: var(--accent-primary);
+  color: white;
+  padding: 60px;
+  border-radius: 12px;
+}
+
+.mission-card.vision {
+  background-color: var(--text-primary);
+}
+
+.mission-card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.mission-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.value-item {
+  padding: 40px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: var(--transition-speed);
+}
+
+.value-item:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-5px);
+}
+
+.value-num {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--bg-tertiary);
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.value-item h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.value-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .intro-grid, .mission-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+}

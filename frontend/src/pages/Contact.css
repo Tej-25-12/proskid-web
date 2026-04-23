@@ -1,0 +1,142 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.method {
+  display: flex;
+  gap: 20px;
+}
+
+.method-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-tertiary);
+  color: var(--accent-primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.method-text h4 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.method-text p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.whatsapp-cta {
+  background-color: #25d3661a;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  gap: 20px;
+  border: 1px solid #25d36633;
+}
+
+.wa-icon {
+  color: #25d366;
+}
+
+.wa-text h4 {
+  margin-bottom: 5px;
+}
+
+.wa-text p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.wa-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.contact-form {
+  background-color: var(--card-bg);
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  border-color: var(--accent-primary);
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+}
+
+.map-section {
+  margin-top: 80px;
+  line-height: 0;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-form {
+    padding: 30px;
+  }
+}

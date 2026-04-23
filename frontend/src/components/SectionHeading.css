@@ -1,0 +1,44 @@
+.section-heading {
+  margin-bottom: 50px;
+}
+
+.section-heading.centered {
+  text-align: center;
+}
+
+.section-heading.centered .heading-line {
+  margin: 15px auto 0;
+}
+
+.section-heading .subtitle {
+  display: block;
+  color: var(--accent-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  max-width: 600px;
+}
+
+.section-heading.centered h2 {
+  max-width: 100%;
+}
+
+.heading-line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-primary);
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+}

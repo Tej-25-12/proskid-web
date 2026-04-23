@@ -1,0 +1,151 @@
+.sister-header {
+  background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2070');
+}
+
+.sister-header-content .badge {
+  background-color: var(--accent-primary);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.sister-intro-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.sister-intro-text p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.sister-stats {
+  display: flex;
+  gap: 40px;
+}
+
+.sister-stat h4 {
+  font-size: 2.5rem;
+  color: var(--accent-primary);
+  margin-bottom: 5px;
+}
+
+.sister-stat p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.sister-intro-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.sister-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.sister-service-card {
+  background-color: var(--card-bg);
+  padding: 50px 40px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  transition: var(--transition-speed);
+}
+
+.sister-service-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-primary);
+}
+
+.sister-service-card h3 {
+  margin: 25px 0 15px;
+  font-size: 1.5rem;
+}
+
+.sister-service-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.sister-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  height: 500px;
+}
+
+.grid-item {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.grid-item.large {
+  grid-row: span 2;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+.cta-sister {
+  background-color: var(--accent-primary);
+  color: white;
+  text-align: center;
+}
+
+.cta-sister h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.cta-sister p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .sister-intro-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sister-services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sister-grid {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .grid-item.large {
+    grid-row: auto;
+    height: 300px;
+  }
+  
+  .grid-item {
+    height: 250px;
+  }
+}
